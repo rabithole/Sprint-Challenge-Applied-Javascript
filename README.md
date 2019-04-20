@@ -31,15 +31,20 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the DOM?
+	1.	The DOM is a tree structure of elements used to render a web page. 
 
 2. What is an event?
+	2.	Events are what happens when  a user interacts with a web page. They are actions taken on the DOM. 
 
 3. What is an event listener?
+	3.	An event listener is a method targeting a specific DOM event or events that calls a function when the event occurs.
 
 4. Why would we convert a NodeList into an Array?
+	4.	NodeLists don’t have all the functionality of an array. A nodeList only has the forEach method. An array has all the methods normally associated with arrays. Converting from a nodeList gives us access to all those methods.
 
 5. What is a component?
-
+	5.	A reusable set of code that can be easily used over and over in multiple projects or in the same project. 
+	
 ### Git Set up
 
 * [ ] Fork the project into your GitHub user account
