@@ -20,7 +20,13 @@ class TabLink {
      // Map over the newly converted NodeList we just created in our if statement above. Convert each this.cards element into a new instance of the TabCard class. Pass in a card object to the TabCard class. 
 /////////////////   This line is the problem /////////////////////////  //////////////////////////////////////////////////////////////////////
     // this.cards = Array.from(this.cards).map(() => new TabCard(this.cards));
-    this.cards = Array.from(this.cards).map(card => new TabCard(card));
+    // this.cards = Array.from(this.cards).map(() => new TabCard(this.cards));
+
+    // this.cards = Array.from(this.cards).map(card => new TabCard(card));
+
+    this.cards = Array.from(this.cards).map(function(card) { 
+      return card = new TabCard(card);
+    });
           console.log(this.cards)
 
     // Add a click event that invokes this.selectTab
